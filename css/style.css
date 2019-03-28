@@ -118,3 +118,25 @@ header img{
 .voices{
     background: #f8f8f8;
 }
+
+.voices .flex{
+    /* Flexboxコンテナーとして定義 */
+    display: flex;
+    /* 水平方向に揃え、均等に間隔を空ける */
+    justify-content: space-between;
+}
+
+.voice{
+    width:250px;
+    background: #fff;
+    position: relative;
+}
+
+.voice img{
+    border-radius: 50%;
+    border: 10px solid #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
