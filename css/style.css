@@ -26,7 +26,16 @@ header .container{
     width: 820px;
     margin: 0 auto;
     padding: 60px 0;
-    /* background: pink; */
+    /* 相対位置への配置 */
+    position: relative;
+}
+
+header img{
+    /* 絶対位置への配置 */
+    position: absolute;
+    /* 右下に配置 */
+    bottom: 0;
+    right: 0;
 }
 
 .btn{
