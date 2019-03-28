@@ -130,6 +130,8 @@ header img{
     width:250px;
     background: #fff;
     position: relative;
+    box-sizing: border-box;
+    padding:  60px  40px 25px;
 }
 
 .voice img{
@@ -139,4 +141,17 @@ header img{
     left: 0;
     right: 0;
     margin: 0 auto;
+
+    /* 円のwidth:90px+border:10px=110なので、半分だけ上げる */
+    top: -55px;
+}
+
+.voice h1{
+    text-align: center;
+    font-size: 18px;    
+    font-weight: normal;
+}
+
+.voices .section-title{
+    margin-bottom: 95px;
 }
