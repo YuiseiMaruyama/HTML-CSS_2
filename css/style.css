@@ -21,6 +21,8 @@ body{
     text-align: center;
     font-weight: normal;
     font-size: 24px;
+    margin-bottom: 60px;
+    margin-top: 0;
 }
 
 .section-title::after{
@@ -91,6 +93,7 @@ header img{
     width: 360px;
 }
 
+/* E:nth-of-type(n)は、疑似クラスの一種で、 n番目のその種類の要素にスタイルを適用 */
 .feature:nth-of-type(odd) .desc{
     float: right;
     padding-left: 40px;
@@ -99,4 +102,13 @@ header img{
 .feature:nth-of-type(even) .desc{
     float: left;
     padding-right: 40px;
+}
+
+/* 最後だけスタイル変化 */
+.feature:not(:last-child){
+    margin-bottom: 60px;
+}
+
+.feature{
+    overflow: hidden;
 }
